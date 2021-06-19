@@ -1,1 +1,23 @@
+<!doctype html>
 
+html><head><meta charset="utf-8"><title>enquries</title>	<meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="css.min.css" rel="stylesheet" type="text/css">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="javascript.min.js"></script><script>    $(document).ready(function () {        $("input").focus(function () {            $(this).css("background-color", "pink");        });        $("input").blur(function () {            $(this).css("background-color", "white");        });        $("textarea").focus(function () {            $(this).css("background-color", "pink");        });        $("textarea").blur(function () {            $(this).css("background-color", "white");        });    });</script></head><body>	<h2>ENTER THE REQUIREMENT</h2>	<div class="container">		<form id="myForm" name="form1" method="POST">			<div class="row">				<div class="col-25">					<label for="fname">F Name: </label>				</div>				<div class="col-75">					<input type="text" id="fname" name="fname" />				</div>			</div>			<div class="row">				
+<div class="col-25">					
+<label for="number">Number: </label>				
+</div>			
+	<div class="col-75">					
+<input  id="number" type="number" name="number" />			
+	</div>			</div>			<div class="row">				<div class="col-25">					<label for="email">Email: </label>				</div>				<div class="col-75">					<input  id="email" type="email" name=email />				</div>		
+	</div>		
+	<div class="row">				
+<div class="col-25">				
+	<label for="Enqueries">Equeries: </label>				
+</div>			
+	<div class="col-75">				
+	<textarea id="Enqueries" name="Enqueries" style="height: 100px"></textarea>			
+	</div>			
+</div>			
+ <div class="row">    			
+<input type="Submit" value="Submit" onClick="myFuction" id="Submit" >				   		
+	</div>		
+</form>	</div>		
+</body></html>
